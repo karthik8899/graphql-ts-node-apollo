@@ -1,0 +1,14 @@
+query GetTodo {
+  getTodo(id: "5fc2b3625a59e5bf3f4fe732"){
+    _id
+    content
+    isDone
+    createdAt
+  }
+}
+
+mutation CreateTodo {
+  createTodo(createTodoData:{content: "testContent"}) {
+    content
+  }
+}
